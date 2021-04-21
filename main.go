@@ -72,7 +72,7 @@ type TrackingData struct {
 			Lon float64 `json:"lon"`
 		} `json:"position"`
 		Altitude         float64 `json:"altitude"`
-		Speed            int     `json:"speed"`
+		Speed            float64 `json:"speed"`
 		FitnessPointData struct {
 			DeviceID             int64         `json:"deviceId"`
 			ActivityType         string        `json:"activityType"`
@@ -80,7 +80,7 @@ type TrackingData struct {
 			PointStatus          string        `json:"pointStatus"`
 			DistanceMeters       float64       `json:"distanceMeters"`
 			HeartRateBeatsPerMin int           `json:"heartRateBeatsPerMin"`
-			SpeedMetersPerSec    int           `json:"speedMetersPerSec"`
+			SpeedMetersPerSec    float64       `json:"speedMetersPerSec"`
 			CadenceCyclesPerMin  int           `json:"cadenceCyclesPerMin"`
 			DurationSecs         int           `json:"durationSecs"`
 			ActivityCreatedTime  time.Time     `json:"activityCreatedTime"`
